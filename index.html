@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Project Finder</h1>
+            <p>Discover the perfect project to work on based on your chosen language and time!</p>
+        </header>
+
+        <div class="selectors">
+            <div class="selector">
+                <label for="language">Select Language:</label>
+                <select id="language">
+                    <option value="all">All</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="java">Java</option>
+                    <option value="c">C</option>
+                    <option value="c++">C++</option>
+                </select>
+            </div>
+
+            <div class="selector">
+                <label for="time">Select Time (hours):</label>
+                <select id="time">
+                    <option value="1">1 hour</option>
+                    <option value="2">2 hours</option>
+                    <option value="3">3 hours</option>
+                    <option value="4">4 hours</option>
+                    <option value="5">5 hours</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="findProject" class="btn">Find Project</button>
+
+        <div id="projectOutput" class="project-output"></div>
+    </div>
+
+    <footer>
+        <p>&copy; </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
